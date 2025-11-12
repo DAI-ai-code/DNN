@@ -1,0 +1,1 @@
+vary random state, epochs, alpha, metric, number of nodes in a layer, number of layers.
