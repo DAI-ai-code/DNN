@@ -1,0 +1,1 @@
+@ AJ - refer to day 4 2_ file for multi layer perceptron. Do not go through day 5 1_ file.
