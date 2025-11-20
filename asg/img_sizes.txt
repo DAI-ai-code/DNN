@@ -1,0 +1,22 @@
+flower          max           min
+
+daisy :     500, 322        320, 215    (180, 240 actually) 
+dandelion:  500, 333        159, 240
+rose:       500, 332        201, 240
+sunflower:  500, 333        160, 240
+tulips:     500, 441        159, 240        
+
+
+
+
+conv(2,2, 1024) <- max(4,4, 512) 
+<- conv(8,8, 512) <- max(10,10, 256) 
+<- conv(20,20, 256) <- max(22,22, 128) 
+<- conv(44,44, 128) <- max(46,46, 64)
+<- conv(92,92, 64) <- max(94,94, 32) 
+<- conv(188,188, 32) <-  image(190, 190, 3)
+
+Assumption - we use standard filters -  conv (3,3) stride 1 and Max Pool (2,2) stride 2 and we are using no padding.
+
+Flatten: 4096
+Dense: 1024 or 512
